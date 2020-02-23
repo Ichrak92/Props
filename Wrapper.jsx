@@ -3,15 +3,9 @@ import Title from './Title'
 import Photo from './Photo'
 import ichrak from "./photo/ichrak.pnj"
 
-function Wrapper(props){
+const Wrapper=(props)=>{
     return(
-        <Photo src={ichrak} />
-        <Title style={{
-            color:'red'
-
-        }}>Ichrak Ben Asker</Title>
-        <Title small>Environmental Engineer</Title>
-        </Wrapper>
+     <div>{props.children}</div>
     )
 }
 export default Wrapper;
