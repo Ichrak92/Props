@@ -1,8 +1,10 @@
-import react from 'react';
+import React from 'react';
 
-function Photo(props){ 
+const Photo=(props)=>{ 
     return(
+        <div>
         <img src={props.src}/>
+            </div>
     )
 
     }
